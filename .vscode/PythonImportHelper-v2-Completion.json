@@ -1,0 +1,98 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "zipfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "ZipFile",
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "isExtraImport": true,
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "mss",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mss",
+        "description": "mss",
+        "detail": "mss",
+        "documentation": {}
+    },
+    {
+        "label": "filesoptions",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class filesoptions():\n    def compactFiles():\n        # join caminho + filename\n        zipName = os.path.join(pathfolder, 'screenZip.zip')\n        # Cria o arquivo ZIP e adiciona todos os arquivos da pasta \"Compactar\"\n        with zipfile.ZipFile(zipName, 'w') as zipf:\n            for foldername, subfolders, filenames in os.walk(pathfolder):\n                for filename in filenames:\n                    # Evita adicionar o próprio arquivo ZIP ao arquivo compactado\n                    if filename != 'screenZip.zip':",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "path = os.getcwd()\npathfolder = r\"Compactar\"\ngetnow = datetime.now()\nacthour = datetime.strftime(getnow, \"%H%M%S\")\nclass filesoptions():\n    def compactFiles():\n        # join caminho + filename\n        zipName = os.path.join(pathfolder, 'screenZip.zip')\n        # Cria o arquivo ZIP e adiciona todos os arquivos da pasta \"Compactar\"\n        with zipfile.ZipFile(zipName, 'w') as zipf:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "pathfolder",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "pathfolder = r\"Compactar\"\ngetnow = datetime.now()\nacthour = datetime.strftime(getnow, \"%H%M%S\")\nclass filesoptions():\n    def compactFiles():\n        # join caminho + filename\n        zipName = os.path.join(pathfolder, 'screenZip.zip')\n        # Cria o arquivo ZIP e adiciona todos os arquivos da pasta \"Compactar\"\n        with zipfile.ZipFile(zipName, 'w') as zipf:\n            for foldername, subfolders, filenames in os.walk(pathfolder):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "getnow",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "getnow = datetime.now()\nacthour = datetime.strftime(getnow, \"%H%M%S\")\nclass filesoptions():\n    def compactFiles():\n        # join caminho + filename\n        zipName = os.path.join(pathfolder, 'screenZip.zip')\n        # Cria o arquivo ZIP e adiciona todos os arquivos da pasta \"Compactar\"\n        with zipfile.ZipFile(zipName, 'w') as zipf:\n            for foldername, subfolders, filenames in os.walk(pathfolder):\n                for filename in filenames:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "acthour",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "acthour = datetime.strftime(getnow, \"%H%M%S\")\nclass filesoptions():\n    def compactFiles():\n        # join caminho + filename\n        zipName = os.path.join(pathfolder, 'screenZip.zip')\n        # Cria o arquivo ZIP e adiciona todos os arquivos da pasta \"Compactar\"\n        with zipfile.ZipFile(zipName, 'w') as zipf:\n            for foldername, subfolders, filenames in os.walk(pathfolder):\n                for filename in filenames:\n                    # Evita adicionar o próprio arquivo ZIP ao arquivo compactado",
+        "detail": "app",
+        "documentation": {}
+    }
+]
