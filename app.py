@@ -46,4 +46,5 @@ class filesoptions():
 
 if __name__ == "__main__":
     c = filesoptions 
+    c.ScreenShots()
     c.compactFiles()
